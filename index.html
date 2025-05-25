@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineroEasy - Gana dinero escribiendo reseñas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .problem-box {
+            background-color: rgba(220, 53, 69, 0.1);
+            border-left: 4px solid #dc3545;
+        }
+        .solution-box {
+            background-color: rgba(40, 167, 69, 0.1);
+            border-left: 4px solid #28a745;
+        }
+        .bonus-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bonus-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .step-box {
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Hero Section -->
+    <section class="relative h-96 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+        <div class="hero-overlay absolute inset-0 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Convierte tu tiempo en dinero real</h1>
+                <p class="text-xl text-gray-300 mb-8">Gana dinero escribiendo reseñas o atrayendo personas. Todo desde tu casa, todo desde Discord.</p>
+                <a href="https://discord.gg/CBMNjePk9e" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 transform hover:scale-105">
+                    <i class="fab fa-discord mr-2"></i> Únete a nuestro Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12 px-4 max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+            <p class="text-lg text-gray-600">
+                DineroEasy es una comunidad donde podés ganar dinero de dos formas: escribiendo reseñas para negocios o invitando a personas a formar parte del proyecto. Todo el trabajo es remoto y se gestiona por completo desde nuestro servidor de Discord.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mt-12">
+            <!-- Review Distributor -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-star text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Repartidor de Reseñas</h3>
+                </div>
+                <p class="text-gray-600">
+                    Como Repartidor de Reseñas, recibirás negocios y textos listos para publicar en Google Maps. Solo necesitás una cuenta de Gmail activa y seguir instrucciones simples. Te pagamos por cada reseña verificada.
+                </p>
+            </div>
+
+            <!-- Community Attractor -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <div class="flex items-center mb-4">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-bullhorn text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">Atractor</h3>
+                </div>
+                <p class="text-gray-600">
+                    Como Atractor, tu trabajo es hacer crecer la comunidad. Por cada persona activa que invites, ganás dinero. Cuantos más traés, más podés escalar en nuestro sistema de bonificaciones.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-12">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">5 pasos para empezar a ganar dinero</h2>
+            
+            <div class="space-y-4">
+                <!-- Step 1 -->
+                <div class="bg-gray-50 step-box p-6 flex items-start">
+                    <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Creá un ticket</h3>
+                        <p class="text-gray-600">
+                            Creá un ticket en el canal #ticket-for-reviews de nuestro Discord y pedí hacer reseñas. Solo abrí el ticket cuando anunciamos que hay disponibles, de lo contrario quedarás en lista de espera.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white step-box p-6 flex items-start">
+                    <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Recibí instrucciones</h3>
+                        <p class="text-gray-600">
+                            Recibirás el link del local en Google Maps y el texto exacto que debés poner. Accedé al local, copiá el texto que te damos, y dejá una reseña realista con 5 estrellas. Si querés, podés usar IA para mejorar el texto sin cambiar las palabras clave.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-gray-50 step-box p-6 flex items-start">
+                    <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Enviá tu reseña</h3>
+                        <p class="text-gray-600">
+                            Enviá el enlace de tu reseña publicada por el ticket. Solo revisamos enlaces, no capturas. Así verificamos que está visible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white step-box p-6 flex items-start">
+                    <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <span class="font-bold">4</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Recibí tu pago</h3>
+                        <p class="text-gray-600">
+                            Pasanos tu método de pago: ya sea tu PayPal, alias de Mercado Pago o Cuenta DNI. El pago se procesa el mismo día si tu reseña es válida.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-gray-50 step-box p-6 flex items-start">
+                    <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <span class="font-bold">5</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">¡Disfrutá tu dinero!</h3>
+                        <p class="text-gray-600">
+                            Podés dejar tu testimonio en el canal de experiencias para que otros vean que esto es real.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructions Section -->
+    <section class="py-12 px-4 max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold text-center mb-8">Instrucciones para hacer reseñas correctamente</h2>
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                    <span>Usá tus cuentas de Gmail reales y activas. No recomendamos usar cuentas nuevas.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                    <span>Si no tenés suficientes cuentas, pedí ayuda a amigos o familiares. Cuantas más cuentas uses, más reseñas podés hacer.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                    <span>Publicá el texto exacto que te damos, sin agregar ni modificar nada. Las reseñas deben parecer naturales.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                    <span>No incluyas links, ni frases promocionales, ni datos de contacto. Google puede bloquearlas si parecen spam.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                    <span>Enviá el enlace directo de la reseña, no capturas. Solo aceptamos reseñas que estén visibles.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                    <span>Respetá los tiempos. Si se te pide esperar entre reseñas o para evitar spam, seguí las instrucciones.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Common Problems -->
+    <section class="py-12 px-4 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Problemas comunes y cómo resolverlos</h2>
+        
+        <div class="space-y-4">
+            <div class="problem-box p-4 rounded">
+                <p class="text-gray-800"><span class="font-semibold">La reseña no aparece publicada:</span> A veces Google bloquea automáticamente algunas cuentas. Probá usar otra cuenta o cambiar tu conexión a internet.</p>
+            </div>
+            
+            <div class="solution-box p-4 rounded">
+                <p class="text-gray-800"><span class="font-semibold">La reseña queda como pendiente:</span> Esto es normal. Refrescá la página o revisá desde otra cuenta. Si no aparece después de 10 minutos, reintentá.</p>
+            </div>
+            
+            <div class="problem-box p-4 rounded">
+                <p class="text-gray-800"><span class="font-semibold">La reseña no tiene el texto correcto:</span> Si modificás palabras clave o publicás en otro negocio, no se valida. Asegurate de copiar tal cual el texto que te damos.</p>
+            </div>
+            
+            <div class="solution-box p-4 rounded">
+                <p class="text-gray-800"><span class="font-semibold">La cuenta es nueva o poco usada:</span> Si tu cuenta no tiene actividad previa, puede que Google la considere poco confiable. Recomendamos tener al menos 1 mes de uso y otras reseñas.</p>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded border border-blue-200 mt-6">
+                <p class="text-gray-800">
+                    <span class="font-semibold">Nota importante:</span> Si seguís todos los pasos y aún tenés problemas, podés reintentar con otra cuenta o escribirnos por ticket para revisar tu caso. No uses VPNs ni software extraño, eso puede generar bloqueos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Programs -->
+    <section class="py-12 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestro Sistema de Bonificaciones</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Tier 1 -->
+                <div class="bonus-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-green-100 text-green-800 font-bold py-1 px-3 rounded-full text-sm inline-block mb-4">Nivel 1</div>
+                    <h3 class="text-xl font-semibold mb-2">Bono Diario</h3>
+                    <p class="text-gray-600 mb-4">Si hacés 15 reseñas en un día, el pago será de €0,55 por reseña.</p>
+                    <div class="text-blue-600 font-medium">+ Pago estándar</div>
+                </div>
+                
+                <!-- Tier 2 -->
+                <div class="bonus-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-blue-100 text-blue-800 font-bold py-1 px-3 rounded-full text-sm inline-block mb-4">Nivel 2</div>
+                    <h3 class="text-xl font-semibold mb-2">Bono Diario Avanzado</h3>
+                    <p class="text-gray-600 mb-4">Si hacés 30 reseñas, se paga €0,60 por reseña y accedés a prioridad en pagos.</p>
+                    <div class="text-blue-600 font-medium">+ Pagos más rápidos</div>
+                </div>
+                
+                <!-- Weekly Bonus 1 -->
+                <div class="bonus-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-purple-100 text-purple-800 font-bold py-1 px-3 rounded-full text-sm inline-block mb-4">Semanal</div>
+                    <h3 class="text-xl font-semibold mb-2">Bono de 250 Reseñas</h3>
+                    <p class="text-gray-600 mb-4">Si hacés 250 reseñas en 7 días, recibís €20 extra.</p>
+                    <div class="text-blue-600 font-medium">+ Beneficios adicionales</div>
+                </div>
+                
+                <!-- Weekly Bonus 2 -->
+                <div class="bonus-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-yellow-100 text-yellow-800 font-bold py-1 px-3 rounded-full text-sm inline-block mb-4">Élite</div>
+                    <h3 class="text-xl font-semibold mb-2">Bono de 350 Reseñas</h3>
+                    <p class="text-gray-600 mb-4">Si hacés 350 reseñas, recibís €35 extra.</p>
+                    <div class="text-blue-600 font-medium">+ Estado VIP</div>
+                </div>
+                
+                <!-- Invite Bonus -->
+                <div class="bonus-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-pink-100 text-pink-800 font-bold py-1 px-3 rounded-full text-sm inline-block mb-4">Referidos</div>
+                    <h3 class="text-xl font-semibold mb-2">Bono por Referencias</h3>
+                    <p class="text-gray-600 mb-4">Por cada 10 personas activas que invites, recibís €1.</p>
+                    <div class="text-blue-600 font-medium">+ Ingresos residuales</div>
+                </div>
+                
+                <!-- Performance Bonus -->
+                <div class="bonus-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-indigo-100 text-indigo-800 font-bold py-1 px-3 rounded-full text-sm inline-block mb-4">Rendimiento</div>
+                    <h3 class="text-xl font-semibold mb-2">Bono de Rendimiento</h3>
+                    <p class="text-gray-600 mb-4">Si trabajás de forma constante, podés ser invitado a nuestro equipo profesional con mejores condiciones.</p>
+                    <div class="text-blue-600 font-medium">+ Crecimiento profesional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 bg-black text-white">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Estás listo para empezar?</h2>
+            <p class="text-xl text-gray-300 mb-8">Unite ahora al servidor y empezá a ganar desde hoy mismo. No necesitas experiencia, solo ganas.</p>
+            <a href="https://discord.gg/CBMNjePk9e" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition duration-300 transform hover:scale-105">
+                <i class="fab fa-discord mr-2"></i> Ingresar al servidor
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition">Política de privacidad</a>
+                <span class="hidden md:block text-gray-600">|</span>
+                <a href="#" class="text-gray-400 hover:text-white transition">Contacto por Discord</a>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-gray-500 text-sm">
+                © 2025 DineroEasy. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
